@@ -9,5 +9,8 @@ public class AwsImageUploadApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AwsImageUploadApplication.class, args);
 	}
-
 }
+
+
+
+
