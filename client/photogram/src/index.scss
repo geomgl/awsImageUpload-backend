@@ -1,0 +1,189 @@
+html,
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+/* .inline {
+    display: inline;
+}
+
+.posts-and-follows {
+    margin-right: 24px;
+}
+
+#mainContainer {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+#profileContainer {
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+#profileHeaderContainer {
+    padding: 48px;
+    display: flex;
+}
+
+#profilePic {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+#profileInfo {
+    width: 500px;
+    margin-left: 48px;
+}
+
+
+#profileInfoFirstRow {
+    margin-bottom: 24px;
+}
+
+#profileInfoSecondRow{
+    margin-bottom: 24px;
+}
+
+#editProfileButton {
+    margin-left: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    border-color: black;
+    border-width: 1px;
+    background-color: white;
+} */
+
+.inline {
+    display: inline;
+}
+
+.posts-and-follows {
+    margin-right: 24px;
+}
+
+#mainContainer {
+  height: 100%;
+  background-color: whitesmoke;
+}
+
+#profileContainer {
+    max-width: 975px;
+    margin: 0 auto;
+}
+
+#profileHeaderContainer {
+    padding: 24px 12px 48px 12px;
+    display: flex;
+}
+
+#profilePic {
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
+
+#profileInfo {
+    width: 500px;
+    margin-left: 48px;
+}
+
+#username {
+    display: inline
+}
+
+
+#usernameAndEditProfileContainer {
+    margin-bottom: 24px;
+}
+
+#postsAndFollowsContainer, #postsAndFollowsContainerSmall {
+    margin-bottom: 24px;
+    ul {
+        padding-left: 0;
+    }
+}
+
+#editProfileButton {
+    margin-left: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    border-color: black;
+    border-width: 1px;
+    background-color: white;
+    vertical-align: middle;
+}
+
+#photosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 22.5px;
+}
+
+#photo {
+    height: 310px;
+    width: 310px;
+
+}
+
+@media screen and (max-width: 675px) {
+  #searchBar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 735px) {
+    #profilePic {
+        height: 75px;
+        width: 75px;
+    }
+
+    #username {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    #editProfileButton {
+        margin-left: 0;
+        width: 250px;
+    }
+
+    #profileInfoFirstRow {
+        margin-bottom: 0px;
+    }
+
+    #postsAndFollowsContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .posts-and-follows {
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #photo {
+        height: 33%;
+        width: 33%;
+    }
+}
+
+  
