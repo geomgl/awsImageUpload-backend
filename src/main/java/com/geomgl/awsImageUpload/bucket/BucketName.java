@@ -2,7 +2,7 @@ package com.geomgl.awsImageUpload.bucket;
 
 public enum BucketName {
 
-    PROFILE_IMAGE("aws-image-upload-memes");
+    PHOTOGRAM_IMAGES("geomgl-photogram-image-uploads");
 
     private final String bucketName;
 

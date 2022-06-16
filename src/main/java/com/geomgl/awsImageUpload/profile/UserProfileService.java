@@ -53,7 +53,7 @@ public class UserProfileService {
         // Note that we also specify the filename, we could just use the filename but for uniqueness we can
         // append a random UUID to the actual filename
 
-        String path = String.format("%s/%s", BucketName.PROFILE_IMAGE.getBucketName(), user.getUserProfileId());
+        String path = String.format("%s/%s", BucketName.PHOTOGRAM_IMAGES.getBucketName(), user.getUserProfileId());
         String filename = String.format("%s-%s", file.getOriginalFilename(), UUID.randomUUID());
 
         try {
@@ -68,7 +68,7 @@ public class UserProfileService {
 
     public byte[] downloadUserProfileImage(UUID userProfileId) {
         UserProfile user = getUser(userProfileId);
-        String path = String.format("%s/%s", BucketName.PROFILE_IMAGE.getBucketName(), user.getUserProfileId());
+        String path = String.format("%s/%s", BucketName.PHOTOGRAM_IMAGES.getBucketName(), user.getUserProfileId());
         String filename = user.getUserProfileImageLink();
         return fileStore.download(path, filename);
     }
